@@ -1,0 +1,1181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: xyz;
+}
+
+html,body{
+width:100%;
+height:100%;
+background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.header{
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 124px;
+    width: 124px;
+    margin-left: 16px;
+}
+
+.information {
+    width: 300px;
+    margin-right: 50px;
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.information a {
+    text-decoration: none;
+    color: #000000; 
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.information a:hover {
+    text-decoration: underline;
+    color: rgb(15, 115, 181); 
+}
+
+.home{
+    margin-right: 13px;
+} 
+
+.about{
+    margin-left: 13px;
+}
+
+.login-page{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 500px;
+    width: 470px;
+    border: 1px solid black;
+    border-radius: 13px;
+    margin-bottom: 40px;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.card .sign-up .google{
+    margin-left: 55px;
+    display: flex;
+    white-space: nowrap;
+    border: 1px solid rgb(193, 198, 193);
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.card .sign-up .google img{
+    margin-right: 13px;
+    height: 18px;
+    width: 18px;
+}
+
+.card .sign-up .google a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+} 
+
+.card .sign-up .facebook{
+    margin-right: 55px;
+    display: flex;
+    border: 1px solid rgb(193, 198, 193);
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.card .sign-up .facebook a{
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+} 
+
+.card .sign-up .facebook img{
+    margin-right: 13px;
+    height: 18px;
+    width: 18px;
+}
+
+.card .or{
+    display: flex;
+    justify-content: center;
+    margin-top: 53px;
+    margin-bottom: 53px;
+}
+
+.card .or p{
+    color: rgb(118, 120, 121);
+    font-family: "Poppins", sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .form-group{
+    margin-bottom: 32px;
+}
+
+form .form-group input {
+    width: 400px; 
+    border: none;
+    border-bottom: 2px solid #999494; 
+    padding: 8px 12px;
+    background-color: transparent;
+}
+
+form .form-group input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+form .button{
+    padding: 7px 45px 7px 45px;
+    border-radius: 3px;
+    border: 1px;
+    font-family: "Poppins", sans-serif;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    cursor: pointer;
+}
+
+.about-section{
+    margin-top: 30px;
+}
+
+.about-section div h1,h3{
+    font-family: "Literata", serif;
+    font-weight: 400;
+    font-family: "Literata", serif;
+    margin-left: 120px;
+}
+
+.about-section div h1{
+    font-size: 102px;
+    line-height: 151.47px;
+}
+
+.about-section div h3{
+    font-size: 42px;
+    line-height: 62.3px;
+    color: #0075FFF0;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.about-section div.furniture{
+    display: flex;
+    justify-content: center;
+    gap: 153px;
+}
+
+.about-section div.furniture img.img-1{
+    height: 480px;
+    margin-bottom: 40px;
+}
+
+.about-section div.furniture img.img-2{
+    width: 720px;
+    height: 480px;
+}
+
+.about-section .team .team-heads h2{
+    margin-top: 120px;
+    font-style: "Literata", serif;
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 87.62px;
+    text-align: center;
+}
+
+.about-section .team{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section .team .carrie, .luke{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: #9B9B9B2E;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-section .team .carrie .carrie-img img{
+    width: 264px;
+    height: 261.62px;
+    border-radius: 132px;
+    margin-left: -500px;
+}
+
+.about-section .team .carrie .carrie-info{
+    margin-left: -160px;
+}
+
+.about-section .team .carrie .carrie-info p{
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 94.8px;
+}
+
+.about-section .team .carrie .carrie-info div.content{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29.3px;
+}
+
+.about-section .team .luke .luke-img img{
+    width: 264px;
+    height: 261.62px;
+    border-radius: 132px;
+    margin-right: 200px;
+}
+
+.about-section .team .luke .luke-info{
+    padding-right: 70px;
+    margin-left: 490px;
+    white-space: nowrap;
+}
+  
+.about-section .team .luke .luke-info div.content {
+    text-align: right;
+}
+  
+.about-section .team .luke .luke-info p{
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 94.8px;
+}
+
+.about-section .team .luke .luke-info div.content{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29.3px;
+}
+
+.about-section .work{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.about-section .work  div p{
+    margin-top: 120px;
+    font-style: "Literata", serif;
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 87.62px;
+    text-align: center;
+    text-decoration: underline 2px;
+}
+
+.about-section .work .work-1, .work-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-section .acme{
+    font-family: "Literata", serif;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 63.86px;
+}
+
+.about-section .acme-info .acme-content{
+    font-family: "Litereta", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28.22px;
+}
+
+.about-section .work-2 .acme-info .acme-content{
+    text-align: right;
+}
+
+.about-section .work img{
+    height: 318px;
+    width: 476px;
+}
+
+.about-section .living-room{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-section .living-room .living-room-img img{
+    width: 440px;
+    height: 440px;
+    border-radius: 220px;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+.about-section .living-room .living-room-img .living-room-img-img-1 {
+    position: absolute; 
+    right: 230px;
+    z-index: 1;
+}
+
+.about-section .living-room .living-room-img .living-room-img-img-2 {
+    position: relative; 
+    bottom: -120px;
+    z-index: 0; 
+}
+
+.about-section .living-room-details .heading{
+    background: #0FA6C0BF;
+    font-family: "Literata", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    padding: 18px;
+}
+
+.about-section .living-room-details .dtls{
+    display: flex;
+    align-items: center;
+}
+
+.about-section .living-room-details div .dtls-heading{
+    font-family: "Literata", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.about-section .living-room-details div .location{
+    font-family: "Literata", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000BF;
+    display: inline-block;
+    margin-top: 11px;
+    margin-left: 18px;
+}
+
+.about-section .living-room-details .role{
+    font-family: "Literata", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.about-section .living-room-details .lorem{
+    color: #000000BF;
+    font-family: "Literata", sans-serif;
+    font-size: 36px;
+    margin-left: 10px;
+    margin-left: 15px;
+}
+
+.contact-section{
+    background-color: #4BBDD0;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 378px;
+    width: 100%
+}
+
+.contact-section .contact-text{
+    margin-left: -105px;
+}
+
+.contact-section .contact-text p{
+    font-family: "Literata", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+}
+
+.contact-section .contact-text .email{
+    font-family: "Literata", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: white;
+}
+
+.contact-section .contact-text .cstmr-cr{
+    font-family: "Literata", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: white;
+}
+
+.contact-section .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-section .social-media a{
+    font-family: "Literata", sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-section .social-media a:hover{
+    cursor: pointer;
+    color: rgb(70, 144, 167);
+}
+
+.contact-section .social-media i{
+    margin-right: 16px;
+}
+
+.contact-section .payment{
+    margin-right: -120px;
+}
+
+.contact-section .payment .pay{
+    font-family: "Literata", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.contact-section .payment .pay-method{
+    display: flex;
+    gap: 6px;
+}
+
+.contact-section .payment .pay-method img{
+    height: 44px;
+    width: 92px;
+}
+
+.contact-section .payment .pay-method img:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: xyz;
+        }
+        
+    html,body{
+        width:100%;
+        height:100%;
+        background-color: #74EBD5;
+        background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+     }
+
+    p {
+        font-size: 14px;
+    }
+
+    .header {
+        margin-top: 8px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+        margin-left: 8px;
+    }
+    
+    .information {
+        width: auto;
+        margin-right: 20px;
+    }
+    .information a {
+        font-size: 16px;
+    }
+    .information a:hover {
+        font-size: 16px;
+    }
+    .login-page {
+        margin-top: 20px;
+    }
+    .card {
+        height: auto;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .sign-up {
+        margin-top: 30px;
+    }
+    .card .sign-up .google {
+        margin-left: 65px;
+    }
+    .card .sign-up .google img {
+        height: 14px;
+        width: 14px;
+        margin-right: 8px;
+    }
+    .card .sign-up .google a {
+        font-size: 10px;
+    }
+    .card .sign-up .facebook {
+        margin-right: 60px;
+    }
+    .card .sign-up .facebook a {
+        font-size: 10px;
+    }
+    .card .or {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .card .or p {
+        font-size: 14px;
+    }
+    form .form-group input {
+        width: 90%;
+    }
+    form .button {
+        padding: 5px 30px;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .about-section div h1 {
+        font-size: 42px;
+        line-height: 1.2;
+        margin-left: 120px;
+    }
+    .about-section div h3 {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .about-section div.furniture {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .about-section div.furniture img.img-1{
+        width: 344px;
+        height: 280px;
+        margin-bottom: 10px;
+    }
+    
+    .about-section div.furniture img.img-2{
+        width: 520px;
+        height: 280px;
+    }
+
+    .about-section .team .team-heads h2 {
+        margin-top: 60px;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .about-section .team .carrie .carrie-img img {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin-left: -210px;
+    }
+
+    .about-section .team .carrie .carrie-info {
+        margin-left: -80px;
+    }
+    .about-section .team .carrie .carrie-info p {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .about-section .team .carrie .carrie-info div.content {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .about-section .team .luke .luke-info p {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .about-section .team .luke .luke-img img {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin-right: 160px;
+    }
+
+    .about-section .team .luke .luke-info {
+        padding-right: 10px;
+        margin-left: 320px;
+    }
+
+    .about-section .team .luke .luke-info div.content {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .about-section .work div p {
+        margin-top: 60px;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .about-section .work img {
+        height: 240px;
+        width: 360px;
+    }
+
+    .about-section .living-room .living-room-img img {
+        width: 240px;
+        height: 240px;
+        border-radius: 120px;
+        margin-right: 40px;
+    }
+    
+    .about-section .living-room .living-room-img .living-room-img-img-1 {
+        position: absolute; 
+        right: 130px;
+        z-index: 1;
+    }
+    
+    .about-section .living-room .living-room-img .living-room-img-img-2 {
+        position: relative; 
+        bottom: -40px;
+        z-index: 0; 
+    }
+
+    .about-section .living-room-details .heading {
+        font-size: 22px;
+        padding: 14px;
+    }
+
+    .about-section .living-room-details div .dtls-heading {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+    .about-section .living-room-details div .location {
+        font-size: 14px;
+        margin-top: 6px;
+        margin-left: 12px;
+    }
+
+    .about-section .living-room-details .role {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .about-section .living-room-details .lorem {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .contact-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .contact-section .contact-text {
+        margin-left: -6px;
+    }
+
+    .contact-section .contact-text p {
+        font-size: 22px;
+    }
+
+    .contact-section .contact-text .email {
+        font-size: 14px;
+    }
+
+    .contact-section .contact-text .cstmr-cr {
+        font-size: 10px;
+    }
+
+    .contact-section .social-media {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .contact-section .social-media a{
+        font-family: "Literata", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .contact-section .social-media a:hover{
+        cursor: pointer;
+        color: rgb(70, 144, 167);
+    }
+    
+    .contact-section .social-media i{
+        margin-right: 6px;
+    }
+    
+    .contact-section .payment .pay{
+        font-family: "Literata", sans-serif;
+        font-weight: 300;
+        font-size: 26px;
+        color: white;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    
+    .contact-section .payment .pay-method{
+        display: flex;
+        gap: 6px;
+    }
+    
+    .contact-section .payment .pay-method img{
+        height: 34px;
+        width: 62px;
+    }
+    
+    .contact-section .payment .pay-method img:hover{
+        cursor: pointer;
+    }
+    
+     .contact-section .payment {
+        margin-right: -30px;
+    }  
+}
+
+@media only screen and (min-width: 60px) and (max-width: 425px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: xyz;
+    }
+
+    html,body{
+        width:100%;
+        height:100%;
+        background-color: white;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+        margin-left: 4px;
+    }
+
+    .information {
+        width: auto;
+        margin-right: 16px;
+    }
+
+    .information a {
+        font-size: 14px;
+    }
+
+    .information a:hover {
+        font-size: 14px;
+    }
+
+    .login-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .card {
+        border: 1px solid black;
+        width: 70%;
+        margin-bottom: 16px;
+        height: 370px;
+    }
+
+    .sign-up {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .card .sign-up .google {
+        display: flex;
+        white-space: nowrap;
+        border: 1px solid rgb(193, 198, 193);
+        padding: 10px;
+        border-radius: 8px;
+        margin-left: 2px;
+    }
+    
+    .card .sign-up .google img {
+        height: 12px;
+        width: 12px;
+        margin-right: 6px;
+    }
+
+    .card .sign-up .google a {
+        font-size: 6px;
+        margin-bottom: -100px;
+    }
+
+    .card .sign-up .facebook {
+        margin-right: 48px;
+        padding: 10px;
+    }
+
+    .card .sign-up .facebook img {
+        height: 12px;
+        width: 12px;
+        margin-right: 6px;
+    }
+
+    .card .sign-up .facebook a {
+        font-size: 6px;
+        white-space: nowrap;
+    }
+
+    .card .or {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .card .or p {
+        font-size: 14px;
+    }
+
+    form .form-group input {
+        width: 90%;
+    }
+
+    form .button {
+        padding: 5px 24px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .about-section div h1 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-left: 46px;
+    }
+
+    .about-section div h3 {
+        white-space: nowrap;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-left: 46px;
+        margin-top: 0.1px;
+        margin-bottom: 18px;
+    }
+
+    .about-section div.furniture{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-section div.furniture img.img-1 {
+        width: 150px;
+        height: 90px;
+        margin-bottom: 8px;
+    }
+
+    .about-section div.furniture img.img-2 {
+        width: 120px;
+        height: 140px;
+    }
+
+    .about-section .team .team-heads h2 {
+        margin-top: 48px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .about-section .team{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-section .team .carrie, .luke{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background: #9B9B9B2E;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about-section .team .carrie .carrie-img img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-left: 0px;
+    }
+
+    .about-section .team .carrie .carrie-info {
+        margin-left: 60px;
+    }
+
+    .about-section .team .carrie .carrie-info p{
+        font-family: "Dancing Script", cursive;
+        font-weight: 400;
+        font-size: 19px;
+        margin-bottom: -37px;
+    }
+
+    .about-section .team .carrie .carrie-info div.content {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    
+    .about-section .team .luke .luke-img img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-right: 150px;
+    }
+    
+    .about-section .team .luke .luke-info {
+        padding-right: 12px;
+        margin-left: 220px;
+        text-align: right;
+    }
+    
+    .about-section .team .luke .luke-info p {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .about-section .team .luke .luke-info div.content {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .about-section .work{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .about-section .work  div p{
+        margin-top: 20px;
+        font-style: "Literata", serif;
+        font-weight: 400;
+        font-size: 23px;
+        text-align: center;
+        text-decoration: underline 2px;
+    }
+
+    .about-section .work .work-1, .work-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about-section .acme{
+        font-family: "Literata", serif;
+        font-weight: 400;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    
+    .about-section .acme-info .acme-content{
+        font-family: "Litereta", sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 13px;
+        margin-top: -12px;
+    }
+    
+    .about-section .work-2 .acme-info .acme-content{
+        text-align: right;
+    }
+    
+    .about-section .work img{
+        height: 100px;
+        width: 100px;
+    }
+    
+    .about-section .living-room .living-room-img img {
+        width: 100px;
+        height: 100px;
+        border-radius: 500px;
+        margin-right: 10px;
+        margin-top: 180px;
+    }
+
+    .about-section .living-room .living-room-img .living-room-img-img-1 {
+        position: absolute; 
+        right: 30px;
+        z-index: 1;
+    }
+    
+    .about-section .living-room .living-room-img .living-room-img-img-2 {
+        position: relative; 
+        bottom: -40px;
+        z-index: 0; 
+    }
+
+    .about-section .living-room-details .heading {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .about-section .living-room-details div .dtls-heading {
+        font-size: 15px;
+        margin-left: 8px;
+    }
+
+    .about-section .living-room-details div .location {
+        font-size: 10px;
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+
+    .about-section .living-room-details .role {
+        font-size: 15px;
+        margin-left: 8px;
+    }
+
+    .about-section .living-room-details .lorem {
+        font-size: 10px;
+        margin-left: 8px;
+    }
+
+    .contact-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 38px;
+        height: auto;
+        padding-bottom: 16px;
+    }
+
+    .contact-section .contact-text {
+        margin-left: -4px;
+    }
+
+    .contact-section .contact-text p {
+        font-size: 14px;
+    }
+
+    .contact-section .contact-text .email {
+        font-size: 9px;
+    }
+
+    .contact-section .contact-text .cstmr-cr {
+        font-size: 6px;
+    }
+
+    .contact-section .social-media {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .contact-section .social-media a {
+        font-family: "Literata", sans-serif;
+        font-weight: 400;
+        font-size: 8px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .contact-section .social-media a:hover {
+        cursor: pointer;
+        color: rgb(70, 144, 167);
+    }
+
+    .contact-section .social-media i {
+        margin-right: 6px;
+    }
+
+    .contact-section .payment .pay {
+        font-family: "Literata", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        color: white;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .contact-section .payment .pay-method {
+        display: flex;
+        gap: 6px;
+        margin-right: 16px;
+    }
+
+    .contact-section .payment .pay-method img {
+        height: 15px;
+        width: 28px;
+    }
+
+    .contact-section .payment .pay-method img:hover {
+        cursor: pointer;
+    }
+
+    .contact-section .payment {
+        margin-right: -20px;
+    }
+}
+
+
